@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  .mobile{
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }  /* styles for screens with a width of 640px or less go here */
+}
