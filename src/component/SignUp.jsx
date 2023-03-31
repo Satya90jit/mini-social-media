@@ -13,12 +13,18 @@ const SignUp = () => {
     const UpToIn = () => {
       setLogin(false);
     };
+
+    function validateEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    
   
     const createAccount = async (e) => {
       e.preventDefault();
       let hasError = false;
     
-      if (!email.includes("@")) {
+      if (!validateEmail(email)) {
         setEmailError("Please enter a valid email address");
         hasError = true;
       }

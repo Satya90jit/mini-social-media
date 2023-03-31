@@ -39,7 +39,7 @@ const BannerPage = () => {
           <div className="z-50 absolute top-96 left-24">
             
           </div>
-          <button className="absolute top-0 left-0 z-50">Create Blogs</button>
+          {/* <button className="absolute top-0 left-0 z-50">Create Blogs</button> */}
         </article>
       </div>
     </>
